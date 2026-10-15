@@ -3,4 +3,8 @@
     <p class="lead">Studenti registrati: {{ studentiService.numero() }}</p>
     <a class="btn btn-primary" routerLink="/elenco">Vai all'elenco</a>
     <a class="btn btn-outline-primary ms-2" routerLink="/inserimento">Nuovo studente</a>
+    @if (studentiService.migliore(); as m) {
+        <h2 class="h4">La media più alta</h2>
+        <app-studente-card [studente]="m" [azioni]="false" />
+    }
 </div>
