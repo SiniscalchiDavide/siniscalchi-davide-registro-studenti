@@ -4,6 +4,7 @@ import { Elenco } from './elenco/elenco';
 import { Inserimento } from './inserimento/inserimento';
 
 export const routes: Routes = [
+{ path: 'elenco/:id', component: DettaglioStudente },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: Home },
   { path: 'elenco', component: Elenco },

@@ -1,8 +1,9 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { StudentiService } from '../services/studenti-service';
+import { RouterLink } from '@angular/router';
 @Component({
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   selector: 'app-elenco',
   styleUrl: './elenco.css',
   templateUrl: './elenco.html',

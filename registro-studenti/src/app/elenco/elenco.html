@@ -28,7 +28,8 @@
                     <td>{{ s.classe }}</td>
                     <td [class.text-success]="s.mediaVoti >= 6" [class.text-danger]="s.mediaVoti < 6">{{ s.mediaVoti }}</td>
                     <td class="text-end">
-                        <button type="button" class="btn btn-sm btn-outline-danger"(click)="rimuovi(s.id)">Elimina</button>
+                        <a class="btn btn-sm btn-outline-primary" [routerLink]="['/elenco', s.id]">Dettaglio</a>
+                        <button type="button" class="btn btn-sm btn-outline-danger ms-1" (click)="rimuovi(s.id)">Elimina</button>
                     </td>
                 </tr>
             }
